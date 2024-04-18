@@ -145,7 +145,7 @@ class UserRegistration{
 				else{
 					$this->user_id = $uRow;
 					$mail_sent  = $this->sendEmail($token);
-
+					$mail_sent = true;
 					if($mail_sent){
 						#if the email was successfully sent
 						LoggerPrime::debug("Successfully created a user with email :  ". $email);
@@ -222,6 +222,7 @@ class UserRegistration{
 			else{
 
 				$mail_sent  = $this->sendEmail($token);
+				$mail_sent = true;
 				if($mail_sent){
 					#if the email was successfully sent
 					LoggerPrime::debug("Successfully sent a conformation email :  ". $this->email);

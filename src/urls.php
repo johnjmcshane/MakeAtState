@@ -231,6 +231,10 @@ class Url{
 				require_once __DIR__."/infrastructure/manage_options.php";
 				$manage_options = new ManageOptions($this->oTemplate);
 				break;
+			case 'manage_questions':
+				require_once __DIR__."/infrastructure/manage_questions.php";
+				$manage_questions = new ManageQuestions($this->oTemplate);
+				break;
 			default:
 				LoggerPrime::info("Navigating to homepage");
 				header("Location: /?t=home");

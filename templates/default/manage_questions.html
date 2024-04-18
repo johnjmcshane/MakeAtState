@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron">
+	<h1 class="display-4">Questions</h1>
+  	<p class="lead">Please answer the following questions</p>
+  	<hr class="my-4">
+  	<p>Help us get more information about the students using MakeAtState!</p>
+
+</div>
+
+<div class="row justify-content-center">
+    <form class="col-8">
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="Post_Picture_Permission">
+      <label class="form-check-label" for="Post_Picture_Permission">Can MSU Libraries post a picture of your work on its Social accounts?</label>
+    </div>
+    <div class="mb-3">
+      <label for="Instagram_Username" class="form-label">Instagram Username (N/A if none)</label>
+      <input type="Username" class="form-control" id="Instagram_Username">
+      <label for="Twitter_Username" class="form-label">Twitter Username (N/A if none)</label>
+      <input type="Username" class="form-control" id="Twitter_Username">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="Part_Of_Class">
+      <label class="form-check-label" for="Part_Of_Class">Is this project part of an MSU class?</label>
+    </div>
+    <div class="mb-3">
+      <label for="Class_Section" class="form-label">What class, course #, or section # is your project associated with? (N/A if none)</label>
+      <input type="Class" class="form-control" id="Class_Section">
+    </div>
+    <label for="Reason_For_Project" class="form-label">Is the project you are submitting associated with any of these items (mark as many as apply)?</label>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="For_Personal_Use">
+      <label class="form-check-label" for="For_personal_use">This is a gift, for fun, or personal use</label>
+      <div class="mb-2"></div>
+      <input type="checkbox" class="form-check-input" id="For_Homework">
+      <label class="form-check-label" for="For_Homework">This is a homework assignment</label>
+      <div class="mb-2"></div>
+      <input type="checkbox" class="form-check-input" id="For_Graduate_Thesis">
+      <label class="form-check-label" for="For_Graduate_Thesis">Part of a graduate thesis or dissertation</label>
+      <div class="mb-2"></div>
+      <input type="checkbox" class="form-check-input" id="For_Research">
+      <label class="form-check-label" for="For_Research">This is research related</label>
+      <div class="mb-2"></div>
+      <input type="checkbox" class="form-check-input" id="Work_Related">
+      <label class="form-check-label" for="Work_Related">A work related job or task (e.g. exhibition, promotions, or giveaways)</label>
+      <div class="mb-2"></div>
+      <input type="checkbox" class="form-check-input" id="For_Prototyping">
+      <label class="form-check-label" for="For_Prototyping">Prototyping for business or entrepreneurship</label>
+      <div class="mb-2"></div>
+      <input type="checkbox" class="form-check-input" id="For_Other_Use">
+      <label class="form-check-label" for="For_Other_Use">Other</label>
+      <div class="mb-2"></div>
+      <input type="checkbox" class="form-check-input" id="Prefer_Not_To_Say">
+      <label class="form-check-label" for="Prefer_Not_To_Say">I prefer not to say</label>
+      <div class="mb-2"></div>
+    </div>
+
+    <div class="mb-4">
+      <label for="Share_More_Details" class="form_label">We would love to hear more about what you are working on. Please feel free to share more details.</label>
+      <input type="Additional_Details" class="form-control" id="Share_More_Details">
+    </div>
+
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+{% endblock %}

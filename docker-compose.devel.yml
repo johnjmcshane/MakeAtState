@@ -23,7 +23,7 @@ services:
 
   webapp:
     volumes:
-      - .:/var/www/3dPrime
+      - .:/var/www/MakeAtState
     deploy:
       mode: replicated
       replicas: 1
